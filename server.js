@@ -12,7 +12,7 @@ import OpenAI from "openai";
 
 const MODEL_ACCESS_KEY = process.env.MODEL_ACCESS_KEY;
 const TEXT_MODEL = process.env.TEXT_MODEL || "gemma-4-31B-it";
-const IMAGE_MODEL = process.env.IMAGE_MODEL || "qwen3.8-max";
+const IMAGE_MODEL = process.env.IMAGE_MODEL || "openai-gpt-image-1";
 const PORT = process.env.PORT || 8080;
 const BASE_URL = "https://inference.do-ai.run/v1";
 
