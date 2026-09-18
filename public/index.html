@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Multimodal Inference Demo — DigitalOcean</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <h1>One Endpoint. Two Modalities.</h1>
+      <p id="endpoint-badge">Loading endpoint info…</p>
+    </header>
+
+    <div id="panels">
+      <section class="panel">
+        <h2>💬 Text — Chat Completions</h2>
+        <p class="hint">POST /v1/chat/completions</p>
+        <textarea id="chat-prompt" rows="3" placeholder="Ask anything…">Give me one fun fact about the ocean.</textarea>
+        <button id="chat-btn">Send</button>
+        <div class="output" id="chat-output">Response will appear here.</div>
+        <div class="meta" id="chat-meta"></div>
+      </section>
+
+      <section class="panel">
+        <h2>🖼️ Image — Generations</h2>
+        <p class="hint">POST /v1/images/generations</p>
+        <textarea id="image-prompt" rows="3" placeholder="Describe an image…">A cute baby sea otter floating on its back in calm blue water</textarea>
+        <select id="image-size">
+          <option value="1024x1024">1024x1024</option>
+          <option value="512x512">512x512</option>
+          <option value="256x256">256x256</option>
+        </select>
+        <button id="image-btn">Generate</button>
+        <div class="output" id="image-output">Image will appear here.</div>
+        <div class="meta" id="image-meta"></div>
+      </section>
+    </div>
+
+    <footer>
+      Both panels call the same <code>MODEL_ACCESS_KEY</code> against the same
+      <code>base_url</code> — only the model and SDK method differ.
+    </footer>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
