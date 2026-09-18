@@ -1,0 +1,16 @@
+{
+  "name": "multimodal-inference-demo",
+  "version": "1.0.0",
+  "description": "Text + image generation through the same DigitalOcean Serverless Inference endpoint",
+  "type": "module",
+  "main": "server.js",
+  "engines": { "node": ">=18.0.0" },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "openai": "^4.68.0"
+  }
+}
