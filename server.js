@@ -11,8 +11,8 @@ import express from "express";
 import OpenAI from "openai";
 
 const MODEL_ACCESS_KEY = process.env.MODEL_ACCESS_KEY;
-const TEXT_MODEL = process.env.TEXT_MODEL || "llama3.3-70b-instruct";
-const IMAGE_MODEL = process.env.IMAGE_MODEL || "openai-gpt-image-1";
+const TEXT_MODEL = process.env.TEXT_MODEL || "gemma-4-31B-it";
+const IMAGE_MODEL = process.env.IMAGE_MODEL || "openai-gpt-oss-20b";
 const PORT = process.env.PORT || 8080;
 const BASE_URL = "https://inference.do-ai.run/v1";
 
